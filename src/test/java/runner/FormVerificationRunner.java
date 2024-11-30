@@ -5,14 +5,14 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/resources/Features", // Path to your feature files
-    glue = "stepDefenition", // Package containing step definitions
+    features = "src/test/resources/Features", 
+    glue = "stepDefenition",
     plugin = {
-        "pretty", // Prints Gherkin steps in console
-        "html:target/cucumber-reports.html", // HTML report
-        "json:target/cucumber-reports.json" // JSON report for CI/CD pipelines
+        "pretty", 
+        "html:target/cucumber-reports.html", 
+        "json:target/cucumber-reports.json" 
     },
-    monochrome = true // Makes console output readable
+    monochrome = true 
 )
 
 public class FormVerificationRunner {

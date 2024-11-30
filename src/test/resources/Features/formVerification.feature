@@ -1,7 +1,5 @@
-@tag
 Feature: Form Verification
 
-  @tag1
   Scenario: Verify the form fields
   When user redirect to website "https://d3pv22lioo8876.cloudfront.net/tiptop/"
   Then Verify that the text input element with xpath "(//input[@name='my-disabled'])" is disabled in the form
